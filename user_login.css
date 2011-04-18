@@ -110,6 +110,12 @@ p.values {
 	width: 80px;
 }
 
+.newPersonalBox h1.pl {
+	background: url(images/title-pl.png);
+	_background: url(images/title-pl.gif);
+	width: 73px;
+}
+
 .newPersonalBox div.login p {
 	margin:0;
 	padding:0;
