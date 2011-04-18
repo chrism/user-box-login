@@ -1,0 +1,296 @@
+/* JUST FOR DEMO PAGE */
+h1 {
+	font: 20px sans-serif;
+}
+
+#left-column {
+	width: 350px;
+	float: left;
+}
+
+#right-column {
+	width: 350px;
+	float: left;
+}
+
+p.values {
+	font: 24px sans-serif;
+	color: #FF5500;
+}
+
+#consumerBox {	
+  background-image: url(images/tilingBg.png);
+	width: 310px;
+	padding: 10px;
+}
+
+/* Helper classes - probably already use your own version of these */
+
+/* for image replacement */
+.ir { 
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;	
+} 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/* Actual Box CSS */
+
+.newPersonalBox {
+	color: #444444;
+	font: 12px sans-serif;
+	padding: 10px;
+	border: 1px solid #cccccc;
+	text-shadow: white 0 1px 0;
+		
+	background: #EFEFEF url(images/speaker_bg.gif) no-repeat top right;
+	
+	background: url(images/speaker_bg.png) no-repeat top right, -moz-linear-gradient(top, #FFFFFF, #D9D9D9);
+	background: url(images/speaker_bg.png) no-repeat top right, -webkit-gradient(linear,left top,left bottom,from(#FFFFFF),to(#D9D9D9));
+	background: url(images/speaker_bg.png) no-repeat top right, linear-gradient(top, #FFFFFF, #D9D9D9);
+	
+	/* shadowing cross browser*/
+	-moz-box-shadow: 2px 2px 5px #AAAAAA, inset 0 0 6px rgba(255, 255, 255, 0.6);
+	-webkit-box-shadow: 2px 2px 5px #AAAAAA, inset 0 0 6px rgba(255, 255, 255, 0.6);
+	box-shadow: 2px 2px 5px #AAAAAA, inset 0 0 6px rgba(255, 255, 255, 0.6);
+	/* For IE 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=120, Color='#AAAAAA')";
+}
+
+.newPersonalBox a {
+	color: #FF5500;
+}
+
+.newPersonalBox h1.title {
+	margin: 0;
+	padding: 0;
+	font: 36px sans-serif;
+	color: #FF5500;
+	margin-bottom: 10px;
+	height: 33px;
+}
+
+.newPersonalBox h1.en {
+	background: url(images/title-en.png);
+	_background: url(images/title-en.gif);
+	width: 73px;
+}
+
+.newPersonalBox h1.fr {
+	background: url(images/title-fr.png);
+	_background: url(images/title-fr.gif);
+	width: 121px;
+}
+
+.newPersonalBox h1.sk {
+	background: url(images/title-sk.png);
+	_background: url(images/title-sk.gif);
+	width: 68px;
+}
+
+.newPersonalBox h1.de {
+	background: url(images/title-de.png);
+	_background: url(images/title-de.gif);
+	width: 73px;
+}
+
+.newPersonalBox h1.it {
+	background: url(images/title-it.png);
+	_background: url(images/title-it.gif);
+	width: 80px;
+}
+
+.newPersonalBox div.login p {
+	margin:0;
+	padding:0;
+}
+
+.newPersonalBox div.login p.login-text {
+	padding-top: 8px;
+}
+
+.newPersonalBox div.login p.login-name {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.newPersonalBox div.login h2 {
+	margin: 10px 0;
+	padding: 0;
+	font: 14px sans-serif;
+	font-weight: bold;
+}
+
+ul.personal-navigation {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul.personal-navigation li {
+	background: url(images/arrow.gif) no-repeat 0 8px;
+	border-bottom: 1px solid #d7d7d7;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding: 4px 12px;
+}
+
+ul.personal-navigation li a {
+	color: #444444;
+	text-decoration: none;
+}
+
+ul.personal-navigation li:last-child {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+table.credit {
+	border-top: 1px solid #FFFFFF;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	border-bottom: 1px solid #d7d7d8;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: 10px;
+}
+
+td {
+	padding: 5px 0;
+	border-top: 1px solid #d7d7d8;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid #FFFFFF;
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+}
+
+td.value {
+	font: 24px sans-serif;
+	color: #FF5500;
+	text-align: right;
+	width: 120px;
+}
+
+td.chf {
+	width: 150px;
+}
+
+td.explanation {
+	padding-left: 10px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+td.value span, p.value span {
+	padding:0;
+	margin:0;
+	vertical-align: middle;
+	display: inline-block;
+	background-image: url(images/values.png);
+	_background-image: url(images/values.gif);
+	height: 26px;
+}
+
+span.one {
+	background-position: 0 0;
+	width: 12px;
+}
+
+span.two {
+	background-position: -12px 0;
+	width: 17px;
+}
+
+span.three {
+	background-position: -29px 0;
+	width: 18px;
+}
+
+span.four {
+	background-position: -47px 0;
+	width: 18px;
+}
+
+span.five {
+	background-position: -65px 0;
+	width: 18px;
+}
+
+span.six {
+	background-position: -83px 0;
+	width: 18px;
+}
+
+span.seven {
+	background-position: -101px 0;
+	width: 16px;
+}
+
+span.eight {
+	background-position: -117px 0;
+	width: 18px;
+}
+
+span.nine {
+	background-position: -135px 0;
+	width: 17px;
+}
+
+span.zero {
+	background-position: -152px 0;
+	width: 17px;
+}
+
+span.fullstop {
+	background-position: -169px 0;
+	width: 7px;
+}
+
+span.comma {
+	background-position: -176px 0;
+	width: 7px;
+}
+
+span.euro {
+	background-position: -183px 0;
+	width: 16px;
+}
+
+span.chf {
+	background-position: -199px 0;
+	width: 50px;
+}
+
+span.zloty {
+	background-position: -249px 0;
+	width: 21px;
+}
+
+a.login-button {
+	background: transparent url(images/button_right.png) no-repeat scroll top right;
+	_background: transparent url(images/button_right.gif) no-repeat scroll top right; 
+	display: inline;
+	float: left;
+	height: 44px;
+	margin-right: 3px;
+	padding-right: 16px;
+	margin-left: -6px;
+	font: 14px sans-serif;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow: #ff6f05 0 -1px 0;
+}
+a.login-button span {
+	background: transparent url(images/button_left.png) no-repeat;
+	_background: transparent url(images/button_left.gif) no-repeat; 
+	display: block;
+	line-height: 18px;
+	padding: 13px 0 13px 17px;
+}
+
