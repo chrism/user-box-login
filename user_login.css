@@ -278,6 +278,11 @@ span.zloty {
 	width: 21px;
 }
 
+span.pound {
+	background-position: -270px 0;
+	width: 16px;
+}
+
 a.login-button {
 	background: transparent url(images/button_right.png) no-repeat scroll top right;
 	_background: transparent url(images/button_right.gif) no-repeat scroll top right; 
